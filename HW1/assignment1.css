@@ -18,11 +18,14 @@ body {
 	padding-right: 25px;
 	
 }
+
 header {
+	padding-top: 20px;
 	color: blue;
 	font-size: 25px;
 	font-weight: bold;
 }
+
 hr {
 	border: 0.01px solid black;
 	margin: 8px -25px 5px -25px;
