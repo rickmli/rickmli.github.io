@@ -1,0 +1,119 @@
+:root {
+	box-sizing: border-box;
+	font-family: "Times New Roman", Times, serif;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+	font-family: inherit;
+}
+body {
+	margin: 0;
+	width: 640px;
+	border-left: 10px solid gray;
+	border-right: 10px solid gray;
+	padding-left: 25px;
+	padding-right: 25px;
+	
+}
+header {
+	color: blue;
+	font-size: 25px;
+	font-weight: bold;
+}
+hr {
+	border: 0.01px solid black;
+	margin: 8px -25px 5px -25px;
+	padding: 0;
+}
+
+nav {
+	margin: 10px 0 0 0;
+	padding:0;
+}
+.nav-bar {
+	list-style: none;
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+}
+.nav-bar > li{
+	font-size: 8px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.nav-bar > li + li {
+	margin-left: 3px;
+}
+
+.nav-bar > :first-child {
+	color: blue;
+}
+
+main {
+	overflow: hiden;
+	white-space: nowrap;
+}
+
+.container {
+	height: 300px;
+	width: 570px;
+	padding: 20px 32px;
+	margin-top: 20px;
+	background-image: url('images/Cutlery.png');
+	background-size: 620px;
+	overflow: hidden;
+	background-attachment: fixed;
+}
+
+.container > h1 {
+	font-size: 30px bold;
+	color: blue;
+	background-size: 534px;
+	overflow: hidden;
+}
+
+.container > button {
+	font-size: 10px;
+	padding: 7px 10px;
+	margin: 15px 0 0 0;
+	border: none;
+	background: white;
+	cursor: pointer;
+}
+
+h2{
+	margin-top: 25px;
+	margin-bottom: -20px;
+	text-align: center;
+	color: blue;
+	overflow: hidden;
+	font-family: "Didot", serif;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+section + section {
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+section {
+	display: inline-block;
+	width: 275px;
+}
+
+section > img {
+	width: 275px;
+}
+
+section > p {
+	font-family: "Didot", serif;
+	font-weight: 700;
+	font-size: 10px;
+	text-align: center;
+	color: blue;	
+}
