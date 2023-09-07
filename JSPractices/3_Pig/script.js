@@ -27,7 +27,6 @@ const init = function () {
   diceEl.classList.add('hidden');
 
   document.querySelector(`.player--0`).classList.add('player--active');
-  document.querySelector(`.player--1`).classList.add('player--active');
 
   document.querySelector(`.player--0`).classList.remove('player--winner');
   document.querySelector(`.player--1`).classList.remove('player--winner');
