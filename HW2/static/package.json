@@ -1,0 +1,14 @@
+{
+  "name": "static",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "compileSCSS": "sass style.scss style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.69.0"
+  }
+}

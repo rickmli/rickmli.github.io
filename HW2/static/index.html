@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ebay Shopping Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="shop">
+      <div class="shop-page">
+        <a href="https://www.ebay.com/" target="_blank" class="shop-page__icon">
+          <img src="images/eBayLogo.png" alt="shop's icon" />
+        </a>
+        <h1 class="shop-page__header">Shopping</h1>
+      </div>
+      <form class="shop-form">
+        <div class="shop-form__keywords">
+          <div class="center">
+            <label for="keywords">
+              Keywords<span style="color: red">*</span>:&nbsp;&nbsp;
+            </label>
+            <input type="text" id="keywords" name="keywords" required />
+          </div>
+        </div>
+        <div class="shop-form__price-range center">
+          <label for="price-range">Price Range:&nbsp;&nbsp;</label>
+          <div id="price-range">
+            From
+            <input type="number" id="lowerBound" name="lowerBound" />
+            to
+            <input type="number" id="upperBound" name="upperBound" />
+          </div>
+        </div>
+        <div class="center">
+          <label for="conditions">Condition:&nbsp;&nbsp;</label>
+          <div id="conditions">
+            <input type="checkbox" id="new" name="new" />
+            New
+
+            <input type="checkbox" id="used" name="used" />
+            Used
+
+            <input type="checkbox" id="very-good" name="very-good" />
+            Very Good
+
+            <input type="checkbox" id="good" name="good" />
+            Good
+
+            <input type="checkbox" id="acceptatble" name="acceptable" />
+            Acceptatble
+          </div>
+        </div>
+        <div class="shop-form__return-acceptance center">
+          <label for="return-acceptance">Seller:&nbsp;&nbsp;</label>
+          <div id="return-acceptance">
+            <input type="checkbox" id="acceptance" name="acceptance" />
+            Return Accepted
+          </div>
+        </div>
+        <div class="shop-form__shipping center">
+          <label for="shipping">Shipping:&nbsp;&nbsp;</label>
+          <div id="shipping"></div>
+          <input type="checkbox" id="free" name="free" />
+          &nbsp;Free&nbsp;
+
+          <input type="checkbox" id="expedited" name="expedited" />
+          &nbsp;Expedited
+        </div>
+        <div class="shop-form__sorting center">
+          <label for="sorting">Sort by:&nbsp;&nbsp;</label>
+          <select id="sorting" name="sorting">
+            <option>Best Match</option>
+            <option>Price: highest first</option>
+            <option>Price + Shipping: highest first</option>
+            <option>Price + Shipping: lowest first</option>
+          </select>
+        </div>
+        <div class="shop-form__btn center">
+          <button class="btn btn--clear">Clear</button>
+          <button class="btn btn--search" type="submit">Search</button>
+        </div>
+      </form>
+
+      <!-- results part -->
+      <div class="results">
+        <div class="results__totalEntries bold"></div>
+
+        <div class="show results__cards">
+          <!-- 
+            <div class="card" data-id="${item["itemId"]}">
+              <div class="card__images">
+                <img class="card__img" src="${item["gallary"]}" />
+              </div>
+              <div class="card__info">
+                <p class="card__content bold">${item["title"]}</p>
+                <p class="card__content align">
+                  Category:&nbsp;${item["category"]}
+                  <img class="card__redirect" src="static/images/redirect.png" />
+                </p>
+                <p class="card__content align">
+                  Condition:&nbsp;${item["condition"]}&nbsp;
+                  ${
+                    item["topRate"] === "true"
+                    ? '<img class="card__topRate" src="static/images/topRatedImage.png" />'
+                    : ""
+                  }
+                </p>
+                <p class="card__content bold">Price:&nbsp;${item["price"]}</p>
+              </div>
+            </div>
+          -->
+        </div>
+      </div>
+    </div>
+    <div class="details">
+      <!-- <p class="details__title">Item Details</p>
+      <button class="btn btn-back">Back to seach results</button>
+      <div class="details__body">
+        <div class="details__row">
+          <div class="details__row--key">Photo</div>
+          <div class="details__row--value">
+            <img src="/static/images/eBayLogo.png" />
+          </div>
+        </div>
+        <div class="details__row">
+          <div class="details__row--key">eBay Link</div>
+          <div class="details__row--value"><a href="#">link</a></div>
+        </div>
+        <div class="details__row">
+          <div class="details__row--key">Title</div>
+          <div class="details__row--value">title</div>
+        </div>
+        <div class="details__row">
+          <div class="details__row--key">Price</div>
+          <div class="details__row--value">0 USD</div>
+        </div>
+        <div class="details__row">
+          <div class="details__row--key">Location</div>
+          <div class="details__row--value">location</div>
+        </div>
+        <div class="details__row">
+          <div class="details__row--key">Seller</div>
+          <div class="details__row--value">seller</div>
+        </div>
+        <div class="details__row">
+          <div class="details__row--key">Return Policy(US)</div>
+          <div class="details__row--value">Return</div>
+        </div>
+      </div> -->
+    </div>
+    <div class="btn__container">
+      <button class="btn btn--showMore hidden">Show more</button>
+      <button class="btn btn--showLess hidden">Show less</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
